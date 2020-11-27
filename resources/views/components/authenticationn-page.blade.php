@@ -29,8 +29,14 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 </head>
 <body>
-    {{ View::make('header') }}
+    {{-- {{ View::make('header') }} --}}
     @yield('content')
-    {{ View::make('footer') }}
+    {{-- {{ View::make('footer') }} --}}
 </body>
+<style>
+    .custom-login{
+        height: : 600px;
+        padding-top:150px
+    }
+</style>
 </html>

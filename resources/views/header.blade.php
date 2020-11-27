@@ -34,6 +34,8 @@
                   aria-labelledby="navbarDropdownMenuLink-333">
                   <a class="dropdown-item" href="#">settings</a>
                   <a class="dropdown-item" href="#">Activity log</a>
+                  <a class="dropdown-item" href="#">profile</a>
+                  <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">logout</a>
                 </div>
           </li>

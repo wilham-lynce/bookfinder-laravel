@@ -1,4 +1,4 @@
-@extends('master')
+@extends('components.authenticationn-page')
 @section('content')
 <div class="container custom-login">
 
@@ -55,3 +55,4 @@
 
 </div>
 @endsection
+
