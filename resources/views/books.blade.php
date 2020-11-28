@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-<B>TEST COMPLETE</B>
+<h1>main landing page for users</h1>
     
 </body>
 </html>
