@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Hash; 
 use App\Models\AdminAccount;
 use Illuminate\Http\Request;
+use App\Http\Middleware\AdminAuth;
+use Session;
 
 class AdminAccountController extends Controller
 {
@@ -16,8 +18,37 @@ class AdminAccountController extends Controller
         else{
             $req->session()->put('username',$admin);
             return redirect('admin');
+            $userdata= ['username'=> $req->get('username')];
+            return $userdata;
         }
     }
+
+
+
+    // public function info($username)
+    // {
+    //     $data = AdminAccount::find($username);
+    //     return view('admin'.['username'=>$data]);
+    // }
+
+
+
+    // public function info(Request $req)
+    // {
+    //     $email = $req->input('email');
+    //     $password = $req->input('password');
+    
+    //     $checkLogin = DB::table('admin')->where(['email'=>$email,'password'=>$password])->first();
+    
+    //     if(count($checkLogin) > 0) {
+    //         return view('admin')->with(['username'=>$checkLogin->name]);
+    //     }
+    
+    //     else {
+    //        // echo "Login Failed!";
+    //        return Redirect::route('login')->with(['error'=> "Invalid email or Password!!"]);
+    //     }
+    // }
     /**
      * Display a listing of the resource.
      *
@@ -28,6 +59,7 @@ class AdminAccountController extends Controller
         //
     }
 
+    
     /**
      * Show the form for creating a new resource.
      *
