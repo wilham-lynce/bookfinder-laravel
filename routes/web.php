@@ -65,3 +65,7 @@ Route::get('adminsearch', [BookController::class,'search']);
 // Route::get('admin',[BookController::class,'catcount']);
 Route::get('admin',[BookController::class,'tcount']);
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

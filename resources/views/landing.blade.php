@@ -61,8 +61,10 @@
 
     <!-- Custom scripts for all pages-->
     {{-- <script src="{{ URL::asset(js/sb-admin-2.min.js) }}"></script> --}}
-    {{-- <script type="text/javascript" src="{{URL:: asset('bookfinder')}}"></script> --}}
-    <script type="text/javascript" src="js/bookfinder"></script>
+    <script type="text/javascript" src="{{asset('js/bookfinder.js')}}"></script>
+    {{-- <script type="text/javascript" src="js/bookfinder"></script> --}}
+
+   
 
 </body>
 
